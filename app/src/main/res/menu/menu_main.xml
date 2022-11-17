@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_button"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search Button"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:id="@+id/personBtn"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Person"
+        app:showAsAction="collapseActionView|always" />
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="Add"
+        android:visible="true"
+        app:showAsAction="collapseActionView|always" />
+</menu>
