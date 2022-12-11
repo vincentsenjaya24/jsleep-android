@@ -1,5 +1,10 @@
 package vincentSenjayaJSleepDN.jsleep_android.request;
-
+/**
+ *
+ * @author Vincent Senjaya
+ * @version 1.0
+ * @since 11 Desember 2021
+ */
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;

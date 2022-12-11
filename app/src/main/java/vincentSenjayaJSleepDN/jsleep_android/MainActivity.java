@@ -25,7 +25,12 @@ import java.io.InputStream;
 import androidx.appcompat.widget.SearchView;
 import androidx.annotation.NonNull;
 import vincentSenjayaJSleepDN.jsleep_android.model.Room;
-
+/**
+ *
+ * @author Vincent Senjaya
+ * @version 1.0
+ * @since 11 Desember 2021
+ */
 
 public class MainActivity extends AppCompatActivity {
 

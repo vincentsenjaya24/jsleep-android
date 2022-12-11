@@ -18,7 +18,12 @@ import retrofit2.Response;
 import vincentSenjayaJSleepDN.jsleep_android.model.Account;
 import vincentSenjayaJSleepDN.jsleep_android.request.BaseApiService;
 import vincentSenjayaJSleepDN.jsleep_android.request.UtilsApi;
-
+/**
+ * Class untuk melakukan proses register account
+ * @author Vincent Senjaya
+ * @version 1.0
+ * @since 11 Desember 2021
+ */
 public class RegisterActivity extends AppCompatActivity {
     static BaseApiService mApiService;
     EditText name;
@@ -56,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if(response.isSuccessful()){
                     Toast.makeText(mContext, "Register Successful", Toast.LENGTH_LONG).show();
-                    Intent move = new Intent(RegisterActivity.this, MainActivity.class);
+                    Intent move = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(move);
                 }
                 else{

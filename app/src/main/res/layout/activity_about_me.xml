@@ -87,34 +87,182 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 
-  <Button
-      android:id="@+id/topupButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="80dp"
-      android:layout_marginBottom="212dp"
-      android:text="TOP UP"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
-
   <com.google.android.material.textfield.TextInputEditText
       android:id="@+id/amount"
       android:layout_width="170dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="76dp"
-      android:layout_marginBottom="212dp"
+      android:layout_marginBottom="380dp"
       android:hint="Amount"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-       />
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/topupButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="76dp"
+      android:layout_marginBottom="380dp"
+      android:text="TOP UP"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
 
   <Button
       android:id="@+id/logOut"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="156dp"
-      android:layout_marginBottom="56dp"
+      android:layout_marginBottom="16dp"
       android:text="Logout"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/registRent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="120dp"
+      android:layout_marginBottom="324dp"
+      android:text="Register Renter"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/renterCard"
+      android:layout_width="310dp"
+      android:layout_height="210dp"
+      android:layout_marginStart="48dp"
+      android:layout_marginBottom="88dp"
+      android:visibility="gone"
+      app:cardBackgroundColor="@color/white"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="10dp"
+      app:cardMaxElevation="12dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/renterNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="NAME"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/renterPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Phone"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/renterAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="95dp"
+        android:text="Address"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/renterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:text="RENTER NAME"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/renterAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="95dp"
+        android:text="RENTER ADDRESS"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/renterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="RENTER PHONE"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+  </androidx.cardview.widget.CardView>
+
+  <Button
+      android:id="@+id/RegisterFixButton"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="80dp"
+      android:layout_marginBottom="72dp"
+      android:text="REGISTER"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+  <Button
+      android:id="@+id/CancelButton"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="80dp"
+      android:layout_marginBottom="72dp"
+      android:text="cancel"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/registerRenterName"
+      android:layout_width="224dp"
+      android:layout_height="42dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginBottom="264dp"
+      android:hint="Name"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:visibility="gone"/>
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/registerRenterAddress"
+      android:layout_width="224dp"
+      android:layout_height="42dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginBottom="220dp"
+      android:hint="Address"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:visibility="gone"/>
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/registerRenterNumber"
+      android:visibility="gone"
+      android:layout_width="224dp"
+      android:layout_height="42dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginBottom="176dp"
+      android:hint="Phone Number"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
