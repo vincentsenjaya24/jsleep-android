@@ -21,11 +21,11 @@
         app:layout_constraintVertical_bias="0.268"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/usernameTextBox"
         android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="username"
+        android:hint="username"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +35,12 @@
         app:layout_constraintVertical_bias="0.37" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordTextBox"
         android:layout_width="600px"
         android:layout_height="wrap_content"
         android:textColor="@android:color/darker_gray"
         android:layout_marginStart="100dp"
-        android:text="password"
+        android:hint="password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

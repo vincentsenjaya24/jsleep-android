@@ -7,11 +7,11 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/RegisterName"
         android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="Name"
+        android:hint="Name"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,11 +21,11 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/RegisterEmail"
         android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="Email"
+        android:hint="Email"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,11 +35,11 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/RegisterPassword"
         android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="Password"
+        android:hint="Password"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
